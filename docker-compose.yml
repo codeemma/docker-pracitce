@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    image: codeemma/practice:latest
+    ports:
+      - "80:80"
+  webcrawler:
+    image: codeemma/webcrawler:latest
+    environment:
+      - WEB_URL=http://web
+ 
